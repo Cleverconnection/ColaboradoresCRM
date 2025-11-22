@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta http-equiv="refresh" content="0; url=./index.html" />
+    <meta charset="utf-8" />
+
+    <script>
+      // Remove o prefixo do repositório
+      var redirect = window.location.pathname.replace("/ColaboradoresCRM", "");
+
+      // Salva rota original
+      sessionStorage.setItem("redirect-path", redirect);
+
+      // Redireciona para index.html
+      window.location.href = "/ColaboradoresCRM/index.html";
+    </script>
   </head>
   <body></body>
 </html>

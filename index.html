@@ -4,10 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CRM Colaboradores</title>
+
+    <!-- 🔥 Recupera a rota original após 404 no GitHub Pages -->
+    <script>
+      const redirectPath = sessionStorage.getItem("redirect-path");
+      if (redirectPath) {
+        // Remove após uso
+        sessionStorage.removeItem("redirect-path");
+
+        // Restaura a URL original para o React Router
+        window.history.replaceState({}, "", redirectPath);
+      }
+    </script>
     <script type="module" crossorigin src="/ColaboradoresCRM/assets/index-D3Dqf-hI.js"></script>
     <link rel="stylesheet" crossorigin href="/ColaboradoresCRM/assets/index-B8ojHXs2.css">
   </head>
+
   <body class="bg-gray-50">
-    <div id="root"></div>
+    <div id="root"></div>
+
+    <!-- React App -->
   </body>
 </html>
